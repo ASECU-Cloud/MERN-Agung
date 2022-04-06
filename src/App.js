@@ -7,7 +7,7 @@ function App() {
     <div>
       <Navbar/>
       <Blog/>
-      
+      this text within App components
     </div>
   );
 }
