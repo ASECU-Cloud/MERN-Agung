@@ -12,7 +12,6 @@
     "serve": "^13.0.2"
   },
   "scripts": {
-    "dev": "react-scripts start",
     "start": "serve -s build",
     "draw": "npx tailwindcss -i ./src/raw.css -o ./public/final.css --watch",
     "build": "react-scripts build",
