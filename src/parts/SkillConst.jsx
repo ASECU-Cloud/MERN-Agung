@@ -1,6 +1,5 @@
 function SkillConst({links}) {
-    // const links= props.links
-    // links.map((link)=>console.log(link.id,link.link));
+    
     return ( 
         <div className="flex justify-around">
 
