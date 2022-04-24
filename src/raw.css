@@ -6,3 +6,10 @@
 body{
     font-family: 'Inter', sans-serif;
 }
+
+@layer components {
+  .card {
+    background-color: theme('colors.white');
+    border-radius: theme('borderRadius.lg');    
+  }
+}

@@ -1,12 +1,15 @@
-import Blogs from "./parts/Blogs";
-import Navbar from "./parts/Navbar";
+import Biografi from "./parts/Biografi";
+import Header from "./parts/Header";
+import Skills from "./parts/Skills";
+
 
 
 function App() {
     return ( 
-    <div>
-        <Navbar/>
-        <Blogs/>
+    <div className="container mx-auto">
+        <Header></Header>
+        <Biografi></Biografi>
+        <Skills></Skills>
     </div> );
 }
 
