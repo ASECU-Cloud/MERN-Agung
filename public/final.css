@@ -534,6 +534,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 .mb-24 {
   margin-bottom: 6rem;
 }
@@ -546,6 +551,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2.25rem;
 }
 
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .flex {
   display: flex;
 }
@@ -554,16 +571,84 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 20rem;
 }
 
+.h-64 {
+  height: 16rem;
+}
+
+.h-48 {
+  height: 12rem;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.h-56 {
+  height: 14rem;
+}
+
+.h-60 {
+  height: 15rem;
+}
+
 .w-6 {
   width: 1.5rem;
+}
+
+.w-8 {
+  width: 2rem;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-around {
   justify-content: space-around;
 }
 
+.justify-items-center {
+  justify-items: center;
+}
+
+.justify-self-center {
+  justify-self: center;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .px-14 {
@@ -574,6 +659,19 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .text-3xl {
@@ -607,4 +705,56 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 body{
   font-family: 'Inter', sans-serif;
+}
+
+@media (min-width: 640px) {
+  .sm\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .sm\:mx-1 {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+  }
+
+  .sm\:mx-8 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .sm\:h-32 {
+    height: 8rem;
+  }
+
+  .sm\:border-l-orange-800 {
+    --tw-border-opacity: 1;
+    border-left-color: rgb(154 52 18 / var(--tw-border-opacity));
+  }
+
+  .sm\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:h-auto {
+    height: auto;
+  }
+
+  .md\:w-full {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .lg\:mb-24 {
+    margin-bottom: 6rem;
+  }
 }
