@@ -1,16 +1,26 @@
-import Biografi from "./parts/Biografi";
-import Header from "./parts/Header";
-import Skills from "./parts/Skills";
+import { useState } from "react";
+import FormTemplate from "./parts/FormTemplate";
+import Preview from "./parts/Preview";
 
 
 
 function App() {
+
+    const [userData,setUserData] = useState([])
+    
+
     return ( 
-    <div className="container mx-auto">
-        <Header></Header>
-        <Biografi></Biografi>
-        <Skills></Skills>
-    </div> );
+    <div className="flex gap-x-2 flex-wrap">
+        <div className="w-full lg:flex-1 bg-blue-300 p-4">
+            <p className="font-bold text-2xl text-cyan-800 pb-2">Form Pendaftaran EDUWORK Pelajar</p>
+            <FormTemplate setUserData={setUserData} userData={userData}/>
+        </div>
+        <div className="w-full lg:flex-1 flex-none bg-cyan-600">
+            <Preview userData={userData}/>
+        </div>
+        
+    </div> 
+    );
 }
 
 export default App;
