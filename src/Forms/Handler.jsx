@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import FormTemplate from "./FormTemplate";
 import Preview from "./Preview";
 
@@ -17,6 +18,7 @@ function Handler() {
         <div className="w-full lg:flex-1 flex-none bg-cyan-600">
             <Preview userData={userData}/>
         </div>
+        
     </div> 
     );
 }
