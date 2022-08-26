@@ -1,14 +1,13 @@
 import Biografi from "./Biografi";
-import Header from "./Header"
-import Skills from "./Skills";
+import Header from "./Header";
+
 function Wrap() {
-    return ( 
-        <div>
-            <Header/>
-            <Biografi/>
-            <Skills/>
-        </div>
-     );
+  return (
+    <div>
+      <Header />
+      <Biografi />
+    </div>
+  );
 }
 
 export default Wrap;
